@@ -1,5 +1,5 @@
 {% set name = "wagtail-inventory" %}
-{% set version = "2.5" %}
+{% set version = "2.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/wagtail-inventory-{{ version }}.tar.gz
-  sha256: 37da3fbec65a9f21f420a063beca50326c11191b7d3f1edeb44b04be70c7b0f7
+  sha256: 634a11f2b88a8e34cb9b35b2b65c193717083d64985895dc7a8bca65d53afe72
 
 build:
   noarch: python
