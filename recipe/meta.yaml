@@ -1,5 +1,5 @@
 {% set name = "wagtail-inventory" %}
-{% set version = "3.1" %}
+{% set version = "3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 203748a7eb15191852360682bf01400adeff12c74fb8079ff1c5452295dda524
+  sha256: 989b05928d1283db155d9d47732053829f568cffa7f5925087db96b88acca890
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
